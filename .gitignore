@@ -1,5 +1,48 @@
-out
-dist
-node_modules
-.vscode-test/
-*.vsix
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build directories
+dist/
+out/
+coverage/
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Allow versioning of recommended extensions for the project
+!.vscode/extensions.json
+
+# Allow versioning of debugging configurations (useful for VS Code extension development)
+!.vscode/launch.json
+
+# Allow versioning of predefined tasks (e.g., build, test, lint tasks)
+!.vscode/tasks.json
+
+
+# Ignore compiled TypeScript files
+*.tsbuildinfo
+
+# Ignore test coverage reports
+coverage/
+
+# Ignore lock files
+yarn.lock
+package-lock.json
+
+# Ignore any local configuration files
+local.config.js
+
+
+
