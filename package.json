@@ -1,7 +1,7 @@
 {
   "name": "flutter-file-creator",
   "displayName": "FlutterFileCreator",
-  "description": " Helps create template files for flutter",
+  "description": "Helps create template files for flutter",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.98.0"
@@ -17,7 +17,12 @@
         {
           "command": "flutter-feature.createFeatureFolderFromContext",
           "when": "explorerResourceIsFolder",
-          "group": "flutter-feature-group@999" 
+          "group": "flutter-feature-group@999"
+        },
+        {
+          "command": "flutter-feature.createBlocFromContext",
+          "when": "explorerResourceIsFolder",
+          "group": "flutter-feature-group@999"
         }
       ]
     },
@@ -29,6 +34,10 @@
       {
         "command": "flutter-feature.createFeatureFolderFromContext",
         "title": "Create Feature"
+      },
+      {
+        "command": "flutter-feature.createBlocFromContext",
+        "title": "Create BLoC"
       }
     ]
   },
